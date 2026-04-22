@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee and Grind | Contact</title>
+    <link rel="stylesheet" type="text/css" href="style-1.css">
+    <style>
+        .contact-section {
+            padding: 80px 60px;
+            background-color: #f4e8d9;
+        }
+        
+        .contact-section h1 {
+            font-size: 2.5em;
+            color: #3b2f2f;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        .contact-content {
+            max-width: 900px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            margin-top: 60px;
+        }
+        
+        .contact-info h2 {
+            font-size: 1.5em;
+            color: #C6863B;
+            margin-bottom: 30px;
+        }
+        
+        .info-item {
+            margin-bottom: 30px;
+        }
+        
+        .info-label {
+            font-weight: bold;
+            color: #3b2f2f;
+            margin-bottom: 5px;
+        }
+        
+        .info-text {
+            color: #6b5344;
+            font-size: 0.95em;
+        }
+        
+        .contact-form h2 {
+            font-size: 1.5em;
+            color: #C6863B;
+            margin-bottom: 30px;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #3b2f2f;
+            font-weight: bold;
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #d4c5b0;
+            border-radius: 5px;
+            font-family: Arial, sans-serif;
+            font-size: 0.95em;
+            transition: border-color 0.3s;
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #C6863B;
+        }
+        
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+        
+        .submit-btn {
+            background-color: #C6863B;
+            color: #fff8f0;
+            padding: 12px 40px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .submit-btn:hover {
+            background-color: #D39858;
+            transform: translateY(-2px);
+        }
+        
+        @media(max-width: 1000px) {
+            .contact-content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+        }
+        
+        @media(max-width: 650px) {
+            .contact-section {
+                padding: 40px 20px;
+            }
+            .contact-section h1 {
+                font-size: 1.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.png" alt="Coffee and Grind Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <h1>Get In Touch</h1>
+        <p style="text-align: center; font-size: 1.1em; color: #6b5344; margin-bottom: 40px;">We'd love to hear from you. Reach out with any questions or feedback!</p>
+        
+        <div class="contact-content">
+            <!-- Contact Information -->
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                
+                <div class="info-item">
+                    <div class="info-label">📍 Address</div>
+                    <div class="info-text">123 Coffee Street<br>Your City, State 12345<br>USA</div>
+                </div>
+                
+                <div class="info-item">
+                    <div class="info-label">📞 Phone</div>
+                    <div class="info-text">(555) 123-4567</div>
+                </div>
+                
+                <div class="info-item">
+                    <div class="info-label">📧 Email</div>
+                    <div class="info-text">hello@coffeeandgrind.com</div>
+                </div>
+                
+                <div class="info-item">
+                    <div class="info-label">🕐 Hours</div>
+                    <div class="info-text">Monday - Friday: 6am - 9pm<br>Saturday - Sunday: 7am - 10pm</div>
+                </div>
+            </div>
+            
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <h2>Send us a Message</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Coffee and Grind | Established with Passion and Purpose</p>
+        <p>Javien Ray Jordan | J Montenay | Patrick Purnell | Ryan Sylvester | Erion</p>
+    </footer>
+
+</body>
+</html>
