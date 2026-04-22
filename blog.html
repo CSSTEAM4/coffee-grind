@@ -3,9 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Coffee and Grind | Blog</title>
+<title>Coffee Blog Peak</title>
 
 <style>
+
 * {
     margin: 0;
     padding: 0;
@@ -13,26 +14,11 @@
 }
 
 body {
-    font-family: "Times New Roman", serif;
-    background-color: #b8793b;
-    color: #2b1408;
+    font-family: Georgia, serif;
+    background-color: #7b3f00;
+    color: #d27d2d;
 }
 
-/* NAVBAR */
-nav {
-    background-color: #2b0d06;
-    padding: 15px;
-    text-align: center;
-}
-
-nav a {
-    color: #e3b172;
-    margin: 0 15px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-/* HEADER */
 header {
     text-align: center;
     padding: 40px 20px;
@@ -43,7 +29,6 @@ header h1 {
     letter-spacing: 2px;
 }
 
-/* GRID */
 .container {
     width: 90%;
     margin: auto;
@@ -53,13 +38,13 @@ header h1 {
     padding-bottom: 60px;
 }
 
-/* CARD */
 .card {
     background-color: #e3b172;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 6px 15px rgba(0,0,0,0.25);
     transition: transform 0.3s ease;
+    cursor: pointer;
 }
 
 .card:hover {
@@ -74,64 +59,197 @@ header h1 {
 
 .card p {
     padding: 20px;
+    font-size: 1rem;
     line-height: 1.5;
 }
 
-/* FOOTER */
+.story-layout {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 30px;
+    width: 95%;
+    margin: 60px auto;
+}
+
+.story {
+    background: #e3b172;
+    padding: 25px;
+    border-radius: 10px;
+    line-height: 1.7;
+    font-size: 0.95rem;
+    box-shadow: 0 5px 12px rgba(0,0,0,0.2);
+    border-left: 4px solid #2b0d06;
+}
+
+.center-content {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.link-box {
+    background: #e3b172;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.link-box a {
+    display: inline-block;
+    margin-top: 8px;
+    text-decoration: none;
+    color: #2b0d06;
+    font-weight: bold;
+    border-bottom: 2px solid #2b0d06;
+}
+
+.link-box a:hover {
+    color: #7b3f00;
+}
+
 footer {
     background-color: #2b0d06;
     color: #e3b172;
     text-align: center;
     padding: 30px 10px;
 }
+
+footer h2 {
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+/* ===== MODAL ===== */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.modal-content {
+    background: #e3b172;
+    margin: 10% auto;
+    padding: 25px;
+    width: 60%;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.close {
+    float: right;
+    font-size: 24px;
+    cursor: pointer;
+}
+
 </style>
 </head>
 
 <body>
 
-<!-- NAVIGATION -->
-<nav>
-    <a href="index.html">Home</a>
-    <a href="blog.html">Blog</a>
-    <a href="contact.html">Contact</a>
-</nav>
-
 <header>
-    <h1>COFFEE BLOG PEAK</h1>
+    <h1>PORTFOLIO</h1>
 </header>
 
 <section class="container">
 
     <div class="card">
-        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=800&q=80" alt="Coffee Latte">
-        <p>
-            A quiet kind of luxury lives here — warm light, wood tones, and the slow hum 
-            of morning conversations. Coffee becomes more than a drink… it becomes a ritual.
-        </p>
+        <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd">
+        <p><b>Latte Art:</b> A barista skill that turns espresso and milk into smooth designs.</p>
     </div>
 
     <div class="card">
-        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=80" alt="Coffee Beans">
-        <p>
-            Freshly roasted beans carry stories from distant lands. Every sip connects you 
-            to craftsmanship, patience, and the art of brewing something unforgettable.
-        </p>
+        <img src="https://images.unsplash.com/photo-1485808191679-5f86510681a2">
+        <p><b>Grinding Beans:</b> Fresh grinding unlocks aroma and rich flavor in every cup.</p>
     </div>
 
     <div class="card">
-        <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=800&q=80" alt="Cafe Interior">
-        <p>
-            A quiet indulgence behind glass — toasted edges, vibrant greens, and flavors 
-            waiting to be chosen. The beauty of a café is in everyday luxuries.
-        </p>
+        <img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0">
+        <p><b>Espresso Machine:</b> Pressure brewing creates bold and concentrated coffee shots.</p>
     </div>
 
 </section>
+
+<section class="story-layout">
+
+    <div class="story">
+        <h2>Coffee & Grind</h2>
+        <p>Coffee & Grind represents a refined standard of excellence...</p>
+    </div>
+
+    <div class="center-content">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1521305916504-4a1121188589">
+            <p><b>Espresso:</b> Strong and concentrated coffee shot.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c">
+            <p><b>Cappuccino:</b> Espresso with steamed milk and foam.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735">
+            <p><b>Cold Brew:</b> Smooth coffee brewed with cold water.</p>
+        </div>
+
+        <div class="link-box">
+            <p>Learn more about Computer Science at PVAMU:</p>
+            <a href="https://www.pvamu.edu/engineering/computer-science/" target="_blank">
+                Visit PVAMU Computer Science Department
+            </a>
+        </div>
+
+    </div>
+
+    <div class="story">
+        <h2>A Prestige Experience</h2>
+        <p>Excellence is not optional at Coffee & Grind...</p>
+    </div>
+
+</section>
+
+<!-- MODAL -->
+<div id="modal1" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal1')">&times;</span>
+    <h2>Latte</h2>
+    <p>A latte is creamy, smooth, and made with espresso and steamed milk.</p>
+  </div>
+</div>
 
 <footer>
     <h2>COFFEE AND GRIND</h2>
     <p>Established 2018</p>
 </footer>
 
+<script>
+function openModal(id) {
+    document.getElementById(id).style.display = "block";
+}
+
+function closeModal(id) {
+    document.getElementById(id).style.display = "none";
+}
+
+// close modal when clicking outside
+window.onclick = function(event) {
+    let modal = document.getElementById("modal1");
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
 </body>
+</html>
 </html>
