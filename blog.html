@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coffee and Grind | Blog</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Times New Roman", serif;
+    background-color: #b8793b;
+    color: #2b1408;
+}
+
+/* NAVBAR */
+nav {
+    background-color: #2b0d06;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: #e3b172;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+
+/* GRID */
+.container {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    padding-bottom: 60px;
+}
+
+/* CARD */
+.card {
+    background-color: #e3b172;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card p {
+    padding: 20px;
+    line-height: 1.5;
+}
+
+/* FOOTER */
+footer {
+    background-color: #2b0d06;
+    color: #e3b172;
+    text-align: center;
+    padding: 30px 10px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+    <a href="index.html">Home</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<header>
+    <h1>COFFEE BLOG PEAK</h1>
+</header>
+
+<section class="container">
+
+    <div class="card">
+        <img src="images/blog1.jpg" alt="Coffee Latte">
+        <p>
+            A quiet kind of luxury lives here — warm light, wood tones, and the slow hum 
+            of morning conversations. Coffee becomes more than a drink… it becomes a ritual.
+        </p>
+    </div>
+
+    <div class="card">
+        <img src="images/blog2.jpg" alt="Coffee Beans">
+        <p>
+            Freshly roasted beans carry stories from distant lands. Every sip connects you 
+            to craftsmanship, patience, and the art of brewing something unforgettable.
+        </p>
+    </div>
+
+    <div class="card">
+        <img src="images/blog3.jpg" alt="Cafe Interior">
+        <p>
+            A quiet indulgence behind glass — toasted edges, vibrant greens, and flavors 
+            waiting to be chosen. The beauty of a café is in everyday luxuries.
+        </p>
+    </div>
+
+</section>
+
+<footer>
+    <h2>COFFEE AND GRIND</h2>
+    <p>Established 2018</p>
+</footer>
+
+</body>
+</html>
