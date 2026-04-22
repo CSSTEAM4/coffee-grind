@@ -3,35 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coffee Grind</title>
+    <title>Coffee and Grind Shop</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="cart.js" defer></script>
 </head>
 <body>
     <header>
-        <nav class="fixed-header">
-            <div class="logo">Coffee Grind</div>
-            <div class="cart-icon">
-                <img src="cart-icon.png" alt="Cart">
-                <span class="cart-count">0</span>
-            </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </nav>
     </header>
     <main>
-        <section>
+        <section id="products">
             <h1>Our Products</h1>
-            <div class="product" data-id="1" data-name="Coffee Beans" data-price="10.99">
-                <h2>Coffee Beans</h2>
-                <button class="add-to-cart">Add to Cart</button>
-            </div>
-            <div class="product" data-id="2" data-name="Espresso Beans" data-price="12.99">
-                <h2>Espresso Beans</h2>
-                <button class="add-to-cart">Add to Cart</button>
+            <div class="product-grid">
+                <div class="product">
+                    <img src="coffee1.jpg" alt="Coffee Product 1">
+                    <h2>Coffee 1</h2>
+                    <p>Delicious coffee blend with rich flavor.</p>
+                    <span>$9.99</span>
+                </div>
+                <div class="product">
+                    <img src="coffee2.jpg" alt="Coffee Product 2">
+                    <h2>Coffee 2</h2>
+                    <p>Aromatic coffee blend for morning bliss.</p>
+                    <span>$10.99</span>
+                </div>
+                <div class="product">
+                    <img src="coffee3.jpg" alt="Coffee Product 3">
+                    <h2>Coffee 3</h2>
+                    <p>Smooth coffee blend for a relaxing evening.</p>
+                    <span>$11.99</span>
+                </div>
             </div>
         </section>
     </main>
     <footer>
-        <p>&copy; 2026 Coffee Grind</p>
+        <p>&copy; 2026 Coffee and Grind Shop. All rights reserved.</p>
     </footer>
 </body>
 </html>
