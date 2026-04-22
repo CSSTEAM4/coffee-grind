@@ -1,40 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coffee and Grind | Shop</title>
-    <link rel="stylesheet" type="text/css" href="style-1.css">
-    <style>
-        .shop-section {
-            padding: 80px 60px;
-            background-color: #f4e8d9;
-        }
-        
-        .shop-section h1 {
-            font-size: 2.5em;
-            color: #3b2f2f;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-        
-        .shop-intro {
-            text-align: center;
-            max-width: 800px;
-            margin: 0 auto 60px;
-            font-size: 1.1em;
-            color: #6b5344;
-            line-height: 1.6;
-        }
-        
-        .product-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 40px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Coffee and Grind | Shop</title>
+
+<style>
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Times New Roman", serif;
+  background-color: #D39858;
+  color: #150c0c;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.hero-section {
+  background: linear-gradient(
+    90deg,
+    #D39858 0%,
+    #C6863B 37%,
+    #2a1a16 37%,
+    #150c0c 100%
+  );
+  padding: 40px 80px;
+}
+
+.navbar {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.brand img {
+  width: 150px;
+}
+
+.brand-text h1 {
+  font-size: 28px;
+  letter-spacing: 2px;
+  color: white;
+}
+
+.nav-links {
+  display: flex;
+  gap: 24px;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.shop-title {
+  text-align: center;
+  padding: 60px 20px;
+  font-size: 42px;
+}
+
+.product-section {
+  padding: 40px 60px 80px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.product-card {
+  background: #f2c07b;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+}
+
+.product-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.product-card h3 {
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+.price {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.footer {
+  background: #150c0c;
+  color: #eaceaa;
+  text-align: center;
+  padding: 30px;
+}
+
+.footer-text {
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+
+.footer-established {
+  font-family: cursive;
+  font-size: 20px;
+  color: #d8b48c;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<div class="hero-section">
+
+<div class="navbar">
+
+<div class="brand">
+
+<img src="logo.png">
+
+<div class="brand-text">
+<h1>COFFEE AND GRIND</h1>
+</div>
+
+</div>
+
+<div class="nav-links">
+
+<a href="index.html">Home</a>
+<a href="pages.html">Pages</a>
+<a href="portfolio.html">Portfolio</a>
+<a href="blog.html">Blog</a>
+<a href="shop.html">Shop</a>
+<a href="elements.html">Elements</a>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- TITLE -->
+
+<h2 class="shop-title">
+SHOP OUR PRODUCTS
+</h2>
+
+<p style="text-align:center; margin-bottom:20px;">
+Learn more about coffee here:
+<a href="https://www.ncausa.org/About-Coffee" target="_blank">
+National Coffee Association
+</a>
+</p>
+
+<!-- PRODUCTS -->
+
+<div class="product-section">
+
+<div class="product-grid">
+
+<!-- COFFEE BEANS -->
+
+<div class="product-card">
+
+<img src="coffee-beans.jpg">
+
+<h3>Premium Coffee Beans</h3>
+
+<div class="price">
+$15.99
+</div>
+
+</div>
+
+<!-- MUG -->
+
+<div class="product-card">
+
+<img src="coffee-mug.jpg">
+
+<h3>Coffee Mug</h3>
+
+<div class="price">
+$9.99
+</div>
+
+</div>
+
+<!-- GIFT CARD -->
+
+<div class="product-card">
+
+<img src="gift-card.jpg">
+
+<h3>Gift Card</h3>
+
+<div class="price">
+$25.00
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- FOOTER -->
+
+<div class="footer">
+
+<div class="footer-text">
+COFFEE AND GRIND
+</div>
+
+<div class="footer-established">
+Established 2018
+</div>
+
+</div>
+
+</body>
+</html>        
         .product-card {
             background-color: white;
             border-radius: 10px;
