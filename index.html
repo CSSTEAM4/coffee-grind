@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee and Grind | Home</title>
+    <link rel="stylesheet" type="text/css" href="style-1.css">
+    <style>
+        .hero-section {
+            background: linear-gradient(90deg, #D39858 0%, #C6863B 37%, #2a1a16 37%, #150c0c 100%);
+            min-height: 600px;
+            padding: 60px 80px;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+            width: 100%;
+        }
+
+        .hero-text h1 {
+            font-size: 3.5em;
+            color: #fff8f0;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero-text p {
+            font-size: 1.1em;
+            color: #f4e8d9;
+            margin-bottom: 30px;
+            line-height: 1.8;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #C6863B;
+            color: #fff8f0;
+            padding: 15px 40px;
+            border-radius: 8px;
+            font-size: 1em;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: transparent;
+            border: 2px solid #C6863B;
+        }
+
+        .hero-image img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+        }
+
+        .about-section {
+            padding: 80px 60px;
+            background-color: #f4e8d9;
+            text-align: center;
+        }
+
+        .about-section h2 {
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            color: #3b2f2f;
+        }
+
+        .about-section p {
+            font-size: 1.1em;
+            color: #150c0c;
+            max-width: 900px;
+            margin: 0 auto 20px;
+            line-height: 1.8;
+        }
+
+        .offerings-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            margin-top: 60px;
+        }
+
+        .offering-card {
+            background-color: rgba(255,255,255,0.9);
+            padding: 40px 20px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            transition: transform 0.3s;
+        }
+
+        .offering-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .offering-icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+
+        .offering-card h3 {
+            font-size: 1.4em;
+            color: #3b2f2f;
+            margin-bottom: 10px;
+        }
+
+        .featured-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            margin-top: 60px;
+        }
+
+        .featured-card {
+            background-color: rgba(255,255,255,0.95);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+            transition: transform 0.3s;
+        }
+
+        .featured-card:hover {
+            transform: scale(1.05);
+        }
+
+        .featured-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .featured-info {
+            padding: 30px;
+            text-align: center;
+        }
+
+        .featured-info h3 {
+            font-size: 1.3em;
+            color: #3b2f2f;
+            margin-bottom: 10px;
+        }
+
+        .featured-section {
+            padding: 80px 60px;
+            background-color: #C6863B;
+            text-align: center;
+        }
+
+        .featured-section h2 {
+            font-size: 2.5em;
+            color: #fff8f0;
+            margin-bottom: 20px;
+        }
+
+        @media(max-width: 1000px) {
+            .hero-content {
+                grid-template-columns: 1fr;
+            }
+            .offerings-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .featured-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media(max-width: 650px) {
+            .offerings-grid, .featured-grid {
+                grid-template-columns: 1fr;
+            }
+            .hero-text h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="logo.png" alt="Coffee and Grind Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Welcome to Coffee and Grind</h1>
+                <p>Discover the finest coffee experience. Rooted in culture and driven by care, we bring passion, precision, and community together in every cup.</p>
+                <a href="shop.html" class="cta-button">Shop Now</a>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1512568400610-62da28bc8a13?w=500&h=500&fit=crop" alt="Coffee Cup">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <h2>About Coffee and Grind</h2>
+        <p>"Passion, precision, and people — the heart of Coffee and Grind."
+        </p>
+        <p>We are a Black-owned, family-led café dedicated to uplifting our community. We believe in treating our employees like family, fostering a space where passion, respect, and purpose are felt in every interaction.</p>
+        <p>Our mission is to provide not just exceptional coffee, but a sanctuary where people can connect, create, and feel valued.</p>
+
+        <h2 style="margin-top: 60px; font-size: 2em;">Our Delicious Offerings</h2>
+        <div class="offerings-grid">
+            <div class="offering-card">
+                <div class="offering-icon">☕</div>
+                <h3>Premium Coffee</h3>
+                <p>Expertly crafted beverages from around the world</p>
+            </div>
+            <div class="offering-card">
+                <div class="offering-icon">🫘</div>
+                <h3>Fresh Beans</h3>
+                <p>Sourced and roasted fresh for the perfect brew</p>
+            </div>
+            <div class="offering-card">
+                <div class="offering-icon">🥐</div>
+                <h3>Pastries & Snacks</h3>
+                <p>Delicious treats to pair with your favorite drink</p>
+            </div>
+            <div class="offering-card">
+                <div class="offering-icon">🤝</div>
+                <h3>Community</h3>
+                <p>A welcoming space for everyone to gather</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Section -->
+    <section class="featured-section">
+        <h2>Café Experiences</h2>
+        <div class="featured-grid">
+            <div class="featured-card">
+                <img src="https://images.unsplash.com/photo-1495521821757-a1efb6729352?w=400&h=300&fit=crop" alt="Cozy Café">
+                <div class="featured-info">
+                    <h3>Cozy Atmosphere</h3>
+                    <p>Experience warmth and comfort in every corner</p>
+                </div>
+            </div>
+            <div class="featured-card">
+                <img src="https://images.unsplash.com/photo-1442512595331-e89e6fee58e9?w=400&h=300&fit=crop" alt="Expert Baristas">
+                <div class="featured-info">
+                    <h3>Expert Baristas</h3>
+                    <p>Passionate professionals dedicated to your perfect cup</p>
+                </div>
+            </div>
+            <div class="featured-card">
+                <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=400&h=300&fit=crop" alt="Community Events">
+                <div class="featured-info">
+                    <h3>Community Events</h3>
+                    <p>Join us for special events throughout the year</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Coffee and Grind | Established with Passion and Purpose</p>
+        <p>Javien Ray Jordan | J Montenay | Patrick Purnell | Ryan Sylvester | Erion</p>
+    </footer>
+
+</body>
+</html>
