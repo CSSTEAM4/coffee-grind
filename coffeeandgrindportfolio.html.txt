@@ -1,0 +1,127 @@
+<Coffee and grind portfolio html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coffee Blog Peak</title>
+
+<style>
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: Georgia, serif;
+    background-color: #b8793b;
+    color: #2b1408;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+
+/* GRID CONTAINER */
+.container {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    padding-bottom: 60px;
+}
+
+/* CARD */
+.card {
+    background-color: #e3b172;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+/* IMAGE */
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* TEXT */
+.card p {
+    padding: 20px;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* FOOTER */
+footer {
+    background-color: #2b0d06;
+    color: #e3b172;
+    text-align: center;
+    padding: 30px 10px;
+}
+
+footer h2 {
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <h1>COFFEE BLOG PEAK</h1>
+</header>
+
+<section class="container">
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93" alt="Coffee Latte">
+        <p>
+            "A quiet kind of luxury lives here — warm light, wood tones, and the slow hum of morning conversations. 
+            This is where time softens, and coffee becomes more than a drink… it becomes a ritual."
+        </p>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085" alt="Coffee Beans">
+        <p>
+            "Freshly roasted beans carry stories from distant lands. Every sip connects you to craftsmanship, patience, 
+            and the art of brewing something unforgettable."
+        </p>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348" alt="Cafe Interior">
+        <p>
+            "A quiet indulgence behind glass — toasted edges, vibrant greens, and flavors waiting to be chosen. 
+            The beauty of a café is in these small, everyday luxuries."
+        </p>
+    </div>
+
+</section>
+
+<footer>
+    <h2>COFFEE AND GRIND</h2>
+    <p>Established 2018</p>
+</footer>
+
+</body>
+</html>
