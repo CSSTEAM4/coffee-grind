@@ -1,0 +1,26 @@
+# Coffee and Grind – Stage 1 Planning
+
+## Topic/Purpose
+Our website will be based on a coffee/café brand called Coffee and Grind. The purpose of the site is to attract customers and give them information about our café, including menu items, location, and the overall vibe of the brand. We want users to be able to explore what we offer and feel encouraged to visit or order from us. The website will also highlight a relaxing and productive environment where people can come to study, work, or socialize. Our goal is to create a clean and user-friendly website that represents our café in a professional way.
+
+## Target Audience
+Our target audience includes students, young adults, and coffee lovers. This includes people between the ages of 16–35 who enjoy coffee, studying, or hanging out in a chill environment. Since we are near a college area, students will be a major focus. Anyone looking for a comfortable place to relax or get work done would be interested in our website.
+
+
+
+
+## Site Map
+We will use a hierarchical structure:
+- Home
+  - Menu
+  - About
+  - Contact
+
+All pages will follow the 3-click rule to ensure easy navigation.
+
+## Domain Name
+We will use a free hosting platform such as GitHub Pages to publish our website online.
+
+## Design Choices
+- Font: Times New Roman
+- Style: Clean, modern café aesthetic focused on user experience
