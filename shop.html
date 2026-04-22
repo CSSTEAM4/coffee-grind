@@ -3,47 +3,220 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coffee and Grind Shop</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Coffee and Grind | Shop</title>
+    <link rel="stylesheet" type="text/css" href="style-1.css">
+    <style>
+        .shop-section {
+            padding: 80px 60px;
+            background-color: #f4e8d9;
+        }
+        
+        .shop-section h1 {
+            font-size: 2.5em;
+            color: #3b2f2f;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .shop-intro {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 60px;
+            font-size: 1.1em;
+            color: #6b5344;
+            line-height: 1.6;
+        }
+        
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .product-card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .product-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+        }
+        
+        .product-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            background: linear-gradient(135deg, #C6863B, #D39858);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3em;
+        }
+        
+        .product-info {
+            padding: 25px;
+        }
+        
+        .product-name {
+            font-size: 1.3em;
+            color: #3b2f2f;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .product-description {
+            font-size: 0.95em;
+            color: #6b5344;
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+        
+        .product-price {
+            font-size: 1.4em;
+            color: #C6863B;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        
+        .add-to-cart {
+            width: 100%;
+            background-color: #C6863B;
+            color: #fff8f0;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .add-to-cart:hover {
+            background-color: #D39858;
+            transform: translateY(-2px);
+        }
+        
+        @media(max-width: 1000px) {
+            .product-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media(max-width: 650px) {
+            .product-grid {
+                grid-template-columns: 1fr;
+            }
+            .shop-section {
+                padding: 40px 20px;
+            }
+            .shop-section h1 {
+                font-size: 1.8em;
+            }
+        }
+    </style>
 </head>
 <body>
+    <!-- Header -->
     <header>
         <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#products">Products</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <div class="logo">
+                <img src="logo.png" alt="Coffee and Grind Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section id="products">
-            <h1>Our Products</h1>
-            <div class="product-grid">
-                <div class="product">
-                    <img src="coffee1.jpg" alt="Coffee Product 1">
-                    <h2>Coffee 1</h2>
-                    <p>Delicious coffee blend with rich flavor.</p>
-                    <span>$9.99</span>
-                </div>
-                <div class="product">
-                    <img src="coffee2.jpg" alt="Coffee Product 2">
-                    <h2>Coffee 2</h2>
-                    <p>Aromatic coffee blend for morning bliss.</p>
-                    <span>$10.99</span>
-                </div>
-                <div class="product">
-                    <img src="coffee3.jpg" alt="Coffee Product 3">
-                    <h2>Coffee 3</h2>
-                    <p>Smooth coffee blend for a relaxing evening.</p>
-                    <span>$11.99</span>
+
+    <!-- Shop Section -->
+    <section class="shop-section">
+        <h1>Coffee and Grind Shop</h1>
+        <p class="shop-intro">Browse our selection of premium coffee beans, merchandise, and specialty items. Quality guaranteed in every product.</p>
+        
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <div class="product-image">☕</div>
+                <div class="product-info">
+                    <div class="product-name">Premium Arabica Blend</div>
+                    <div class="product-description">Smooth, balanced blend with notes of chocolate and caramel. Perfect for daily brewing.</div>
+                    <div class="product-price">$15.99</div>
+                    <button class="add-to-cart">Add to Cart</button>
                 </div>
             </div>
-        </section>
-    </main>
+            
+            <!-- Product 2 -->
+            <div class="product-card">
+                <div class="product-image">🫘</div>
+                <div class="product-info">
+                    <div class="product-name">Dark Roast Espresso</div>
+                    <div class="product-description">Bold, intense flavor with rich crema. Ideal for espresso shots and strong coffee lovers.</div>
+                    <div class="product-price">$16.99</div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            
+            <!-- Product 3 -->
+            <div class="product-card">
+                <div class="product-image">✨</div>
+                <div class="product-info">
+                    <div class="product-name">Light Roast Single Origin</div>
+                    <div class="product-description">Bright and fruity notes from Ethiopian highlands. Complex flavor profile for true coffee enthusiasts.</div>
+                    <div class="product-price">$17.99</div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            
+            <!-- Product 4 -->
+            <div class="product-card">
+                <div class="product-image">🏠</div>
+                <div class="product-info">
+                    <div class="product-name">Home Brewing Kit</div>
+                    <div class="product-description">Everything you need to brew café-quality coffee at home. Includes grinder, filter, and brewing guide.</div>
+                    <div class="product-price">$49.99</div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            
+            <!-- Product 5 -->
+            <div class="product-card">
+                <div class="product-image">🎁</div>
+                <div class="product-info">
+                    <div class="product-name">Coffee Lover's Bundle</div>
+                    <div class="product-description">Curated selection of three signature blends. Perfect gift for coffee enthusiasts.</div>
+                    <div class="product-price">$39.99</div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+            
+            <!-- Product 6 -->
+            <div class="product-card">
+                <div class="product-image">☕️🎓</div>
+                <div class="product-info">
+                    <div class="product-name">Coffee and Grind Mug</div>
+                    <div class="product-description">Premium ceramic mug featuring our logo. Keep your coffee hot and support the grind.</div>
+                    <div class="product-price">$12.99</div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2026 Coffee and Grind Shop. All rights reserved.</p>
+        <p>&copy; 2026 Coffee and Grind | Established with Passion and Purpose</p>
+        <p>Javien Ray Jordan | J Montenay | Patrick Purnell | Ryan Sylvester | Erion</p>
     </footer>
+
 </body>
 </html>
