@@ -19,16 +19,44 @@ body {
     color: #d27d2d;
 }
 
-header {
-    text-align: center;
-    padding: 40px 20px;
+/* ===== NAVBAR ===== */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #2b0d06;
 }
 
-header h1 {
+.logo img {
+    width: 60px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #e3b172;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: white;
+}
+
+/* ===== PAGE HEADER ===== */
+.page-title {
+    text-align: center;
+    padding: 30px;
     font-size: 2.5rem;
     letter-spacing: 2px;
 }
 
+/* ===== CARDS ===== */
 .container {
     width: 90%;
     margin: auto;
@@ -43,8 +71,8 @@ header h1 {
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 6px 15px rgba(0,0,0,0.25);
-    transition: transform 0.3s ease;
     cursor: pointer;
+    transition: 0.3s;
 }
 
 .card:hover {
@@ -59,10 +87,9 @@ header h1 {
 
 .card p {
     padding: 20px;
-    font-size: 1rem;
-    line-height: 1.5;
 }
 
+/* ===== STORY SECTION ===== */
 .story-layout {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
@@ -75,12 +102,10 @@ header h1 {
     background: #e3b172;
     padding: 25px;
     border-radius: 10px;
-    line-height: 1.7;
-    font-size: 0.95rem;
-    box-shadow: 0 5px 12px rgba(0,0,0,0.2);
-    border-left: 4px solid #2b0d06;
+    color: #2b0d06;
 }
 
+/* ===== CENTER ===== */
 .center-content {
     display: flex;
     flex-direction: column;
@@ -90,39 +115,11 @@ header h1 {
 .link-box {
     background: #e3b172;
     padding: 15px;
-    margin-top: 20px;
+    text-align: center;
     border-radius: 8px;
-    text-align: center;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-}
-
-.link-box a {
-    display: inline-block;
-    margin-top: 8px;
-    text-decoration: none;
-    color: #2b0d06;
-    font-weight: bold;
-    border-bottom: 2px solid #2b0d06;
-}
-
-.link-box a:hover {
-    color: #7b3f00;
-}
-
-footer {
-    background-color: #2b0d06;
-    color: #e3b172;
-    text-align: center;
-    padding: 30px 10px;
-}
-
-footer h2 {
-    letter-spacing: 2px;
-    margin-bottom: 10px;
 }
 
 /* ===== MODAL ===== */
-
 .modal {
     display: none;
     position: fixed;
@@ -141,7 +138,6 @@ footer h2 {
     width: 60%;
     border-radius: 10px;
     text-align: center;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 
 .close {
@@ -150,15 +146,23 @@ footer h2 {
     cursor: pointer;
 }
 
+/* ===== FOOTER ===== */
+footer {
+    background-color: #2b0d06;
+    color: #e3b172;
+    text-align: center;
+    padding: 30px;
+}
+
 </style>
 </head>
 
 <body>
 
-    <!-- Header -->
+<!-- NAVBAR -->
 <header>
     <nav class="navbar">
-        
+
         <div class="logo">
             <img src="logo.png" alt="Coffee and Grind Logo">
         </div>
@@ -174,34 +178,35 @@ footer h2 {
     </nav>
 </header>
 
-<header>
-    <h1>PORTFOLIO</h1>
-</header>
+<!-- TITLE -->
+<h1 class="page-title">PORTFOLIO</h1>
 
+<!-- CARDS -->
 <section class="container">
 
     <div class="card">
         <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd">
-        <p><b>Latte Art:</b> A barista skill that turns espresso and milk into smooth designs.</p>
+        <p><b>Latte Art:</b> Barista designs in coffee.</p>
     </div>
 
     <div class="card">
         <img src="https://images.unsplash.com/photo-1485808191679-5f86510681a2">
-        <p><b>Grinding Beans:</b> Fresh grinding unlocks aroma and rich flavor in every cup.</p>
+        <p><b>Grinding Beans:</b> Fresh aroma and flavor.</p>
     </div>
 
     <div class="card">
         <img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0">
-        <p><b>Espresso Machine:</b> Pressure brewing creates bold and concentrated coffee shots.</p>
+        <p><b>Espresso Machine:</b> Strong coffee shots.</p>
     </div>
 
 </section>
 
+<!-- STORY -->
 <section class="story-layout">
 
     <div class="story">
         <h2>Coffee & Grind</h2>
-             <h2>Coffee & Grind</h2>
+       <h2>Coffee & Grind</h2>
         <p>
         Coffee & Grind represents a refined standard of excellence. Each cup is crafted with precision,
         turning simple ingredients into something memorable and rich in experience.
@@ -228,28 +233,27 @@ footer h2 {
     and the quiet luxury of a perfectly made cup of coffee.
     </p>
 </div>
-
     <div class="center-content">
 
         <div class="card">
             <img src="https://images.unsplash.com/photo-1521305916504-4a1121188589">
-            <p><b>Espresso:</b> Strong and concentrated coffee shot.</p>
+            <p><b>Espresso:</b> Strong shot of coffee.</p>
         </div>
 
         <div class="card">
             <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c">
-            <p><b>Cappuccino:</b> Espresso with steamed milk and foam.</p>
+            <p><b>Cappuccino:</b> Milk and foam blend.</p>
         </div>
 
         <div class="card">
             <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735">
-            <p><b>Cold Brew:</b> Smooth coffee brewed with cold water.</p>
+            <p><b>Cold Brew:</b> Smooth and chilled.</p>
         </div>
 
         <div class="link-box">
-            <p>Learn more about Computer Science at PVAMU:</p>
+            <p>Learn Computer Science at PVAMU:</p>
             <a href="https://www.pvamu.edu/engineering/computer-science/" target="_blank">
-                Visit PVAMU Computer Science Department
+                Visit Department
             </a>
         </div>
 
@@ -283,16 +287,17 @@ footer h2 {
 </div>
 
 </section>
-    
+
 <!-- MODAL -->
 <div id="modal1" class="modal">
   <div class="modal-content">
     <span class="close" onclick="closeModal('modal1')">&times;</span>
     <h2>Latte</h2>
-    <p>A latte is creamy, smooth, and made with espresso and steamed milk.</p>
+    <p>Creamy espresso-based drink with milk.</p>
   </div>
 </div>
 
+<!-- FOOTER -->
 <footer>
     <h2>COFFEE AND GRIND</h2>
     <p>Established 2018</p>
@@ -307,7 +312,6 @@ function closeModal(id) {
     document.getElementById(id).style.display = "none";
 }
 
-// close modal when clicking outside
 window.onclick = function(event) {
     let modal = document.getElementById("modal1");
     if (event.target == modal) {
@@ -317,5 +321,4 @@ window.onclick = function(event) {
 </script>
 
 </body>
-</html>
 </html>
